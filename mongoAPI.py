@@ -15,8 +15,10 @@ mongo = PyMongo(app)
 def get_last_data():
   debentures = mongo.db.AnbimaSeries
   output = []
+  
   for d in debentures.find().sort([('datetime', -1)]).limit(1):
     output.append({'datetime' : d['datetime'], 'value' : d['value']})
+
   return jsonify({'result' : output})
 
 if __name__ == '__main__':

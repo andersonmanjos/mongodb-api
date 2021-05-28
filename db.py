@@ -1,1 +1,1 @@
-CLIENTE = 'mongodb+srv://user:password@cluster0.bqcog.mongodb.net/Kinvo?retryWrites=true&w=majority'
+CLIENTE = 'mongodb+srv://sa:sa@cluster0.bqcog.mongodb.net/Kinvo?retryWrites=true&w=majority'
